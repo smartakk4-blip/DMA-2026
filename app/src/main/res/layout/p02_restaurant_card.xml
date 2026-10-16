@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Практика 2. Карточка ресторана доставки -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:ignore="Overdraw"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivRestLogo"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:contentDescription="@string/p02_restaurant_card_cd1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_food"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium" />
+
+                <TextView
+                    android:id="@+id/tvRestName"
+                    style="@style/Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/p02_restaurant_card_text2"
+                    app:layout_constraintEnd_toStartOf="@id/ivRestFav"
+                    app:layout_constraintStart_toEndOf="@id/ivRestLogo"
+                    app:layout_constraintTop_toTopOf="@id/ivRestLogo" />
+
+                <TextView
+                    android:id="@+id/tvRestTime"
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/p02_restaurant_card_text3"
+                    app:drawableStartCompat="@drawable/ic_clock"
+                    app:layout_constraintStart_toStartOf="@id/tvRestName"
+                    app:layout_constraintTop_toBottomOf="@id/tvRestName" />
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/p02_restaurant_card_text4"
+                    android:textColor="@color/text_primary"
+                    app:drawableStartCompat="@drawable/ic_star"
+                    app:drawableTint="@color/yellow"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvRestTime"
+                    app:layout_constraintStart_toEndOf="@id/tvRestTime" />
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/p02_restaurant_card_text5"
+                    app:layout_constraintStart_toStartOf="@id/tvRestName"
+                    app:layout_constraintTop_toBottomOf="@id/tvRestTime" />
+
+                <!-- иконка избранного в правом верхнем углу -->
+                <ImageView
+                    android:id="@+id/ivRestFav"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:contentDescription="@string/p02_restaurant_card_cd6"
+                    android:src="@drawable/ic_favorite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/red" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

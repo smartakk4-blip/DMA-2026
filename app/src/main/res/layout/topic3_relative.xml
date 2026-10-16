@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Тема 3. RelativeLayout: позиционирование относительно родителя и соседей -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_padding">
+
+            <!-- 1. Сообщение: текст слева, время у правого нижнего края текста -->
+            <TextView style="@style/SectionTitle" android:text="@string/topic3_relative_text1" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_bubble_in"
+                android:backgroundTint="@color/primary_light"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvMessage"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="240dp"
+                    android:text="@string/topic3_relative_text2" />
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tvMessage"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/tvMessage"
+                    android:text="@string/topic3_relative_text3"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <!-- 2. Шапка: Назад слева, Настройки справа, заголовок по центру родителя -->
+            <TextView style="@style/SectionTitle" android:text="@string/topic3_relative_text4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_card">
+
+                <ImageButton
+                    android:id="@+id/btnBackDemo"
+                    style="@style/IconButton"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/topic3_relative_cd5"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <!-- между кнопками и по центру: кнопки одинаковой ширины, поэтому центр совпадает с центром родителя -->
+                <TextView
+                    style="@style/Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/btnSettingsDemo"
+                    android:layout_toEndOf="@id/btnBackDemo"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/topic3_relative_text6" />
+
+                <ImageButton
+                    android:id="@+id/btnSettingsDemo"
+                    style="@style/IconButton"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/topic3_relative_cd7"
+                    android:src="@drawable/ic_settings" />
+            </RelativeLayout>
+
+            <!-- 3. Карточка товара: цена прижата к низу фото через alignBottom -->
+            <TextView style="@style/SectionTitle" android:text="@string/topic3_relative_text8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/ivCatalogPhoto"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/topic3_relative_cd9"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_product" />
+
+                <TextView
+                    android:id="@+id/tvCatalogName"
+                    style="@style/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/ivCatalogPhoto"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/ivCatalogPhoto"
+                    android:text="@string/topic3_relative_text10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/ivCatalogPhoto"
+                    android:layout_alignStart="@id/tvCatalogName"
+                    android:text="@string/topic3_relative_text11"
+                    android:textColor="@color/green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- 4. Элемент списка музыки -->
+            <TextView style="@style/SectionTitle" android:text="@string/topic3_relative_text12" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/ivTrackCover"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/topic3_relative_cd13"
+                    android:src="@drawable/img_album1" />
+
+                <ImageButton
+                    android:id="@+id/btnTrackFavorite"
+                    style="@style/IconButton"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/topic3_relative_cd14"
+                    android:src="@drawable/ic_favorite_border"
+                    app:tint="@color/red" />
+
+                <TextView
+                    android:id="@+id/tvTrackTitle"
+                    style="@style/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/ivTrackCover"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toStartOf="@id/btnTrackFavorite"
+                    android:layout_toEndOf="@id/ivTrackCover"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/topic3_relative_text15" />
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTrackTitle"
+                    android:layout_alignStart="@id/tvTrackTitle"
+                    android:text="@string/topic3_relative_text16" />
+            </RelativeLayout>
+
+            <!-- 5. Выравнивание по базовой линии шрифта: 28sp и 14sp -->
+            <TextView style="@style/SectionTitle" android:text="@string/topic3_relative_text17" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_light"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvBigPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic3_relative_text18"
+                    android:textColor="@color/text_primary"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tvBigPrice"
+                    android:layout_marginStart="6dp"
+                    android:layout_toEndOf="@id/tvBigPrice"
+                    android:text="@string/topic3_relative_text19"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

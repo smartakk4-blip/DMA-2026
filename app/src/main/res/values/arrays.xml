@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- начальные значения RangeSlider (практика 12) -->
+    <array name="price_range_default">
+        <item>15000.0</item>
+        <item>60000.0</item>
+    </array>
+
+    <!-- темы обращения (практика 18) -->
+    <string-array name="feedback_topics">
+        <item>Проблема с оплатой</item>
+        <item>Доставка заказа</item>
+        <item>Возврат товара</item>
+        <item>Ошибка в приложении</item>
+        <item>Другое</item>
+    </string-array>
+</resources>

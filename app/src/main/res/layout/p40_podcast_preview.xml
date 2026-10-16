@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Практика 40. Превью подкаста: горизонтальный баннер с кнопкой воспроизведения прямо в ленте -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:ignore="Overdraw"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView style="@style/Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p40_podcast_preview_text1" />
+                <TextView style="@style/Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p40_podcast_preview_text2" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/p40_podcast_preview_cd3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_hotel3" />
+            </LinearLayout>
+
+            <!-- баннер подкаста: обложка, текст и кнопка Play в одной строке -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_gradient_promo"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="@string/p40_podcast_preview_cd4"
+                    android:src="@drawable/img_podcast"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p40_podcast_preview_text5"
+                        android:textColor="#E1BEE7"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="@string/p40_podcast_preview_text6"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnPodcastPlay"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_circle_white"
+                    android:contentDescription="@string/p40_podcast_preview_cd7"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_play"
+                    app:tint="@color/purple" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView style="@style/Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p40_podcast_preview_text8" />
+                <TextView style="@style/Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p40_podcast_preview_text9" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/p40_podcast_preview_cd3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_onboarding" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

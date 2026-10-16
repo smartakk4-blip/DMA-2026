@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Тексты экранов (вынесены из разметок, чтобы не было захардкоженных строк) -->
+<resources>
+
+    <!-- activity_main.xml -->
+    <string name="activity_main_text1">Разметки (ПР №5)</string>
+    <string name="activity_main_text2">Куликов Е. А., П24-3.2</string>
+
+    <!-- item_pager_image.xml -->
+    <string name="item_pager_image_cd1">Фото товара</string>
+
+    <!-- layout_cart_footer.xml -->
+    <string name="layout_cart_footer_text1">Итого, 3 товара</string>
+    <string name="layout_cart_footer_text2">4 870 ₽</string>
+    <string name="layout_cart_footer_text3">Купить</string>
+
+    <!-- layout_no_internet.xml -->
+    <string name="layout_no_internet_cd1">Нет сети</string>
+    <string name="layout_no_internet_text2">Нет подключения к интернету</string>
+    <string name="layout_no_internet_text3">Проверьте Wi-Fi или мобильные данные и попробуйте снова</string>
+
+    <!-- p01_marketplace_card.xml -->
+    <string name="p01_marketplace_card_cd1">Фото товара</string>
+    <string name="p01_marketplace_card_text2">−30%</string>
+    <string name="p01_marketplace_card_cd3">В избранное</string>
+    <string name="p01_marketplace_card_text4">34 990 ₽</string>
+    <string name="p01_marketplace_card_text5">49 990 ₽</string>
+    <string name="p01_marketplace_card_text6">Смартфон Nova 12, 256 ГБ, полночный синий, с большим экраном</string>
+    <string name="p01_marketplace_card_text7">4,8 · 2 413 отзывов</string>
+    <string name="p01_marketplace_card_text8">−15%</string>
+    <string name="p01_marketplace_card_text9">639 ₽</string>
+    <string name="p01_marketplace_card_text10">749 ₽</string>
+    <string name="p01_marketplace_card_text11">Пицца «Пепперони» 30 см, доставка за 40 минут</string>
+    <string name="p01_marketplace_card_text12">4,6 · 987 отзывов</string>
+
+    <!-- p02_restaurant_card.xml -->
+    <string name="p02_restaurant_card_cd1">Логотип</string>
+    <string name="p02_restaurant_card_text2">Пиццерия «Тесто»</string>
+    <string name="p02_restaurant_card_text3">25–35 мин</string>
+    <string name="p02_restaurant_card_text4">4,9 (1 200+)</string>
+    <string name="p02_restaurant_card_text5">Доставка 99 ₽ · от 500 ₽</string>
+    <string name="p02_restaurant_card_cd6">Избранное</string>
+
+    <!-- p03_promo_banner.xml -->
+    <string name="p03_promo_banner_text1">Только до воскресенья</string>
+    <string name="p03_promo_banner_text2">Скидка 50% на второй заказ</string>
+    <string name="p03_promo_banner_text3">Промокод SALE50</string>
+    <string name="p03_promo_banner_cd4">Подарок</string>
+
+    <!-- p04_bank_card.xml -->
+    <string name="p04_bank_card_text1">Учебный банк</string>
+    <string name="p04_bank_card_cd2">Бесконтактная оплата</string>
+    <string name="p04_bank_card_text3">2200 1234 5678 9010</string>
+    <string name="p04_bank_card_text4">EVGENIY KULIKOV\n12/29</string>
+    <string name="p04_bank_card_text5">МИР</string>
+
+    <!-- p05_car_specs.xml -->
+    <string name="p05_car_specs_text1">Пробег</string>
+    <string name="p05_car_specs_text2">45 000 км</string>
+    <string name="p05_car_specs_text3">Двигатель</string>
+    <string name="p05_car_specs_text4">2.0 л, 150 л.с.</string>
+    <string name="p05_car_specs_text5">Коробка</string>
+    <string name="p05_car_specs_text6">Автомат</string>
+    <string name="p05_car_specs_text7">Привод</string>
+    <string name="p05_car_specs_text8">Полный</string>
+    <string name="p05_car_specs_text9">Год</string>
+    <string name="p05_car_specs_text10">2021</string>
+    <string name="p05_car_specs_text11">Цвет</string>
+    <string name="p05_car_specs_text12">Серый металлик</string>
+
+    <!-- p06_flight_ticket.xml -->
+    <string name="p06_flight_ticket_text1">Москва → Санкт-Петербург</string>
+    <string name="p06_flight_ticket_text2">08:40</string>
+    <string name="p06_flight_ticket_text3">SVO · Шереметьево</string>
+    <string name="p06_flight_ticket_text4">10:05</string>
+    <string name="p06_flight_ticket_text5">LED · Пулково</string>
+    <string name="p06_flight_ticket_cd6">Самолет</string>
+    <string name="p06_flight_ticket_text7">1 ч 25 мин</string>
+    <string name="p06_flight_ticket_text8">SU 6012 · Эконом · 1 пассажир</string>
+    <string name="p06_flight_ticket_text9">5 480 ₽</string>
+
+    <!-- p07_track_card.xml -->
+    <string name="p07_track_card_cd1">Обложка</string>
+    <string name="p07_track_card_text2">Ночной город</string>
+    <string name="p07_track_card_text3">E</string>
+    <string name="p07_track_card_text4">Неоновые огни</string>
+    <string name="p07_track_card_text5">3:42</string>
+    <string name="p07_track_card_cd6">Меню</string>
+    <string name="p07_track_card_text7">Летний дождь</string>
+    <string name="p07_track_card_text8">Синие крыши</string>
+    <string name="p07_track_card_text9">4:05</string>
+    <string name="p07_track_card_text10">Код без багов</string>
+    <string name="p07_track_card_text11">Junior Band</string>
+    <string name="p07_track_card_text12">2:58</string>
+    <string name="p07_track_card_text13">Утро понедельника</string>
+    <string name="p07_track_card_text14">Кофе и гитара</string>
+    <string name="p07_track_card_text15">3:17</string>
+
+    <!-- p08_tariff_card.xml -->
+    <string name="p08_tariff_card_text1">Тариф «Студент»</string>
+    <string name="p08_tariff_card_text2">Подключен с 1 сентября</string>
+    <string name="p08_tariff_card_text3">Минуты</string>
+    <string name="p08_tariff_card_text4">600 мин</string>
+    <string name="p08_tariff_card_text5">Интернет</string>
+    <string name="p08_tariff_card_text6">30 ГБ</string>
+    <string name="p08_tariff_card_text7">Абонентская плата</string>
+    <string name="p08_tariff_card_text8">490 ₽/мес</string>
+
+    <!-- p09_subscription_hit.xml -->
+    <string name="p09_subscription_hit_text1">Премиум на 12 месяцев</string>
+    <string name="p09_subscription_hit_text2">1 990 ₽</string>
+    <string name="p09_subscription_hit_text3">3 588 ₽</string>
+    <string name="p09_subscription_hit_text4">−45%</string>
+    <string name="p09_subscription_hit_text5">166 ₽ в месяц · без рекламы · офлайн-режим</string>
+    <string name="p09_subscription_hit_text6">Оформить</string>
+    <string name="p09_subscription_hit_text7">ХИТ ПРОДАЖ</string>
+
+    <!-- p10_hotel_booking.xml -->
+    <string name="p10_hotel_booking_cd1">Фото отеля</string>
+    <string name="p10_hotel_booking_text2">Отель «Горный воздух» ★★★★</string>
+    <string name="p10_hotel_booking_text3">9,2</string>
+    <string name="p10_hotel_booking_text4">Превосходно</string>
+    <string name="p10_hotel_booking_text5">· 1 248 отзывов</string>
+    <string name="p10_hotel_booking_text6">7 400 ₽</string>
+    <string name="p10_hotel_booking_text7">за ночь, 2 гостя</string>
+    <string name="p10_hotel_booking_text8">Забронировать</string>
+
+    <!-- p11_transfer.xml -->
+    <string name="p11_transfer_hint1">Номер телефона получателя</string>
+    <string name="p11_transfer_text2">Банк получателя</string>
+    <string name="p11_transfer_cd3">Сбер</string>
+    <string name="p11_transfer_cd4">Т-Банк</string>
+    <string name="p11_transfer_cd5">ВТБ</string>
+    <string name="p11_transfer_cd6">Альфа</string>
+    <string name="p11_transfer_cd7">Газпром</string>
+    <string name="p11_transfer_hint8">Сумма</string>
+    <string name="p11_transfer_suffix9">₽</string>
+    <string name="p11_transfer_text10">500 ₽</string>
+    <string name="p11_transfer_text11">1000 ₽</string>
+    <string name="p11_transfer_text12">5000 ₽</string>
+    <string name="p11_transfer_text13">Перевести</string>
+
+    <!-- p12_price_filter.xml -->
+    <string name="p12_price_filter_text1">Цена, ₽</string>
+    <string name="p12_price_filter_hint2">От</string>
+    <string name="p12_price_filter_hint3">До</string>
+    <string name="p12_price_filter_text4">Бренд</string>
+    <string name="p12_price_filter_text5">Nova</string>
+    <string name="p12_price_filter_text6">Orion</string>
+    <string name="p12_price_filter_text7">Pixelon</string>
+    <string name="p12_price_filter_text8">Тестовый бренд</string>
+    <string name="p12_price_filter_text9">Сбросить фильтры</string>
+    <string name="p12_price_filter_text10">Показать 128 товаров</string>
+
+    <!-- p13_change_password.xml -->
+    <string name="p13_change_password_hint1">Старый пароль</string>
+    <string name="p13_change_password_hint2">Новый пароль</string>
+    <string name="p13_change_password_hint3">Повторите новый пароль</string>
+    <string name="p13_change_password_text4">Пароль должен содержать</string>
+    <string name="p13_change_password_text5">Не меньше 8 символов</string>
+    <string name="p13_change_password_text6">Хотя бы одну цифру</string>
+    <string name="p13_change_password_text7">Заглавную букву</string>
+    <string name="p13_change_password_text8">Пароли совпадают</string>
+    <string name="p13_change_password_text9">Сохранить пароль</string>
+
+    <!-- p14_address.xml -->
+    <string name="p14_address_hint1">Город</string>
+    <string name="p14_address_hint2">Улица</string>
+    <string name="p14_address_hint3">Дом</string>
+    <string name="p14_address_hint4">Подъезд</string>
+    <string name="p14_address_hint5">Этаж</string>
+    <string name="p14_address_hint6">Кв.</string>
+    <string name="p14_address_hint7">Комментарий курьеру</string>
+    <string name="p14_address_text8">Сохранить адрес</string>
+
+    <!-- p15_review.xml -->
+    <string name="p15_review_text1">Как вам заказ?</string>
+    <string name="p15_review_hint2">Расскажите подробнее</string>
+    <string name="p15_review_text3">Прикрепить фото</string>
+    <string name="p15_review_text4">Отправить отзыв</string>
+
+    <!-- p16_privacy.xml -->
+    <string name="p16_privacy_text1">Приватность</string>
+    <string name="p16_privacy_text2">Закрытый профиль</string>
+    <string name="p16_privacy_text3">Публикации видят только подписчики</string>
+    <string name="p16_privacy_text4">Показывать статус «в сети»</string>
+    <string name="p16_privacy_text5">Друзья видят, когда вы онлайн</string>
+    <string name="p16_privacy_text6">Персональная реклама</string>
+    <string name="p16_privacy_text7">Подбор рекламы по вашим интересам</string>
+    <string name="p16_privacy_text8">Отметки на фото</string>
+    <string name="p16_privacy_text9">Разрешить другим отмечать вас на фотографиях</string>
+
+    <!-- p17_card_input.xml -->
+    <string name="p17_card_input_text1">CVC</string>
+    <string name="p17_card_input_hint2">•••</string>
+    <string name="p17_card_input_text3">Номер карты</string>
+    <string name="p17_card_input_hint4">0000 0000 0000 0000</string>
+    <string name="p17_card_input_hint5">ММ/ГГ</string>
+    <string name="p17_card_input_text6">Привязать карту</string>
+
+    <!-- p18_feedback.xml -->
+    <string name="p18_feedback_hint1">Тема обращения</string>
+    <string name="p18_feedback_text2">Проблема с оплатой</string>
+    <string name="p18_feedback_hint3">Опишите проблему</string>
+    <string name="p18_feedback_cd4">Файл</string>
+    <string name="p18_feedback_text5">screenshot_oplata.png</string>
+    <string name="p18_feedback_text6">1,8 МБ из 10 МБ</string>
+    <string name="p18_feedback_cd7">Удалить файл</string>
+    <string name="p18_feedback_text8">Прикрепить еще файл</string>
+    <string name="p18_feedback_text9">Отправить</string>
+
+    <!-- p19_sms_code.xml -->
+    <string name="p19_sms_code_text1">Введите код из SMS</string>
+    <string name="p19_sms_code_text2">Отправили на +7 999 ••• •• 22</string>
+    <string name="p19_sms_code_hint3">•</string>
+    <string name="p19_sms_code_text4">Отправить код повторно</string>
+
+    <!-- p20_edit_profile.xml -->
+    <string name="p20_edit_profile_cd1">Фото профиля</string>
+    <string name="p20_edit_profile_cd2">Сменить фото</string>
+    <string name="p20_edit_profile_hint3">Имя</string>
+    <string name="p20_edit_profile_text4">Евгений</string>
+    <string name="p20_edit_profile_hint5">Фамилия</string>
+    <string name="p20_edit_profile_text6">Куликов</string>
+    <string name="p20_edit_profile_hint7">О себе</string>
+    <string name="p20_edit_profile_helper8">Видно всем пользователям</string>
+    <string name="p20_edit_profile_text9">Сохранить</string>
+
+    <!-- p21_profile_header.xml -->
+    <string name="p21_profile_header_cd1">Аватар</string>
+    <string name="p21_profile_header_text2">128</string>
+    <string name="p21_profile_header_text3">Публикации</string>
+    <string name="p21_profile_header_text4">2,4K</string>
+    <string name="p21_profile_header_text5">Подписчики</string>
+    <string name="p21_profile_header_text6">311</string>
+    <string name="p21_profile_header_text7">Подписки</string>
+    <string name="p21_profile_header_text8">Евгений Куликов</string>
+    <string name="p21_profile_header_text9">Студент П24-3.2 · верстаю экраны для Android 📱</string>
+    <string name="p21_profile_header_text10">Редактировать профиль</string>
+
+    <!-- p22_fitness.xml -->
+    <string name="p22_fitness_text1">7 340</string>
+    <string name="p22_fitness_text2">из 10 000 шагов</string>
+    <string name="p22_fitness_text3">412\nккал</string>
+    <string name="p22_fitness_text4">5,2\nкм</string>
+    <string name="p22_fitness_text5">Активность сегодня: 73% от цели</string>
+
+    <!-- p23_wallet.xml -->
+    <string name="p23_wallet_text1">Баланс счета</string>
+    <string name="p23_wallet_text2">148 230,50 ₽</string>
+    <string name="p23_wallet_cd3">Скрыть баланс</string>
+    <string name="p23_wallet_text4">Карта •• 9010</string>
+    <string name="p23_wallet_cd5">Пополнить</string>
+    <string name="p23_wallet_cd6">Перевести</string>
+    <string name="p23_wallet_cd7">Оплатить</string>
+    <string name="p23_wallet_cd8">Еще</string>
+
+    <!-- p24_sales_analytics.xml -->
+    <string name="p24_sales_analytics_text1">Выручка за неделю</string>
+    <string name="p24_sales_analytics_text2">412 600 ₽ · +18% к прошлой неделе</string>
+    <string name="p24_sales_analytics_text3">Пн</string>
+    <string name="p24_sales_analytics_text4">Вт</string>
+    <string name="p24_sales_analytics_text5">Ср</string>
+    <string name="p24_sales_analytics_text6">Чт</string>
+    <string name="p24_sales_analytics_text7">Пт</string>
+    <string name="p24_sales_analytics_text8">Сб</string>
+    <string name="p24_sales_analytics_text9">Вс</string>
+    <string name="p24_sales_analytics_text10">Показатели</string>
+    <string name="p24_sales_analytics_text11">CTR</string>
+    <string name="p24_sales_analytics_text12">4,8%</string>
+    <string name="p24_sales_analytics_text13">▲ +0,6%</string>
+    <string name="p24_sales_analytics_text14">Конверсия</string>
+    <string name="p24_sales_analytics_text15">2,1%</string>
+    <string name="p24_sales_analytics_text16">▼ −0,2%</string>
+    <string name="p24_sales_analytics_text17">Средний чек</string>
+    <string name="p24_sales_analytics_text18">3 450 ₽</string>
+    <string name="p24_sales_analytics_text19">▲ +210 ₽</string>
+    <string name="p24_sales_analytics_text20">Заказы</string>
+    <string name="p24_sales_analytics_text21">1 284</string>
+    <string name="p24_sales_analytics_text22">▲ +12%</string>
+
+    <!-- p25_battery.xml -->
+    <string name="p25_battery_text1">64%</string>
+    <string name="p25_battery_text2">≈ 9 ч 20 мин до разрядки</string>
+    <string name="p25_battery_text3">0–15%</string>
+    <string name="p25_battery_text4">15–50%</string>
+    <string name="p25_battery_text5">50–100%</string>
+    <string name="p25_battery_text6">Расход по приложениям за сутки</string>
+    <string name="p25_battery_cd7">Видео</string>
+    <string name="p25_battery_text8">34%</string>
+    <string name="p25_battery_cd9">Мессенджер</string>
+    <string name="p25_battery_text10">18%</string>
+    <string name="p25_battery_cd11">Браузер</string>
+    <string name="p25_battery_text12">12%</string>
+    <string name="p25_battery_cd13">Карты</string>
+    <string name="p25_battery_text14">9%</string>
+    <string name="p25_battery_cd15">Музыка</string>
+    <string name="p25_battery_text16">6%</string>
+
+    <!-- p26_achievements.xml -->
+    <string name="p26_achievements_text1">Открыто 5 из 9 достижений</string>
+    <string name="p26_achievements_cd2">Первый шаг</string>
+    <string name="p26_achievements_cd3">Неделя подряд</string>
+    <string name="p26_achievements_cd4">Ночная сова</string>
+    <string name="p26_achievements_cd5">Марафон</string>
+    <string name="p26_achievements_cd6">Заблокировано</string>
+    <string name="p26_achievements_cd7">Меломан</string>
+    <string name="p26_achievements_cd8">Фотограф</string>
+    <string name="p26_achievements_cd9">Болтун</string>
+    <string name="p26_achievements_cd10">Путешественник</string>
+    <string name="p26_achievements_cd11">Легенда</string>
+
+    <!-- p27_taxi_driver.xml -->
+    <string name="p27_taxi_driver_cd1">Фото водителя</string>
+    <string name="p27_taxi_driver_text2">4.98</string>
+    <string name="p27_taxi_driver_text3">Водитель Алексей</string>
+    <string name="p27_taxi_driver_text4">Белая Kia K5</string>
+    <string name="p27_taxi_driver_text5">А 123 ВС 777</string>
+    <string name="p27_taxi_driver_text6">Приедет через 4 минуты · ул. Ленина, 10</string>
+    <string name="p27_taxi_driver_text7">Позвонить</string>
+    <string name="p27_taxi_driver_text8">SOS</string>
+
+    <!-- p28_order_history.xml -->
+    <string name="p28_order_history_text1">12 октября</string>
+    <string name="p28_order_history_text2">Доставлен</string>
+    <string name="p28_order_history_cd3">Товар</string>
+    <string name="p28_order_history_text4">3 товара · 4 870 ₽</string>
+    <string name="p28_order_history_text5">Повторить заказ</string>
+    <string name="p28_order_history_text6">3 октября</string>
+    <string name="p28_order_history_text7">В пути</string>
+    <string name="p28_order_history_text8">2 товара · 1 290 ₽</string>
+    <string name="p28_order_history_text9">21 сентября</string>
+    <string name="p28_order_history_text10">Отменен</string>
+    <string name="p28_order_history_text11">1 товар · 690 ₽</string>
+
+    <!-- p29_smart_home.xml -->
+    <string name="p29_smart_home_text1">Гостиная</string>
+    <string name="p29_smart_home_text2">22,5°</string>
+    <string name="p29_smart_home_text3">Влажность 45%</string>
+    <string name="p29_smart_home_text4">Свет: вкл</string>
+    <string name="p29_smart_home_text5">Спальня</string>
+    <string name="p29_smart_home_text6">20,1°</string>
+    <string name="p29_smart_home_text7">Влажность 52%</string>
+    <string name="p29_smart_home_text8">Свет: выкл</string>
+    <string name="p29_smart_home_text9">Кухня</string>
+    <string name="p29_smart_home_text10">23,8°</string>
+    <string name="p29_smart_home_text11">Влажность 40%</string>
+    <string name="p29_smart_home_text12">Ванная</string>
+    <string name="p29_smart_home_text13">24,6°</string>
+    <string name="p29_smart_home_text14">Влажность 68%</string>
+
+    <!-- p30_medical_card.xml -->
+    <string name="p30_medical_card_text1">A(II)\nRh+</string>
+    <string name="p30_medical_card_text2">Куликов Евгений Анатольевич</string>
+    <string name="p30_medical_card_text3">Полис ОМС 7700 0000 0000 0000</string>
+    <string name="p30_medical_card_text4">Рост 182 см · Вес 74 кг</string>
+    <string name="p30_medical_card_text5">Аллергии</string>
+    <string name="p30_medical_card_text6">Пенициллин</string>
+    <string name="p30_medical_card_text7">Арахис</string>
+    <string name="p30_medical_card_text8">Пыльца березы</string>
+    <string name="p30_medical_card_text9">Лактоза</string>
+    <string name="p30_medical_card_text10">Кошачья шерсть</string>
+    <string name="p30_medical_card_text11">Йод</string>
+    <string name="p30_medical_card_text12">Экстренные контакты</string>
+    <string name="p30_medical_card_text13">Куликова Анна</string>
+    <string name="p30_medical_card_text14">Мама · +7 999 111-22-33</string>
+    <string name="p30_medical_card_cd15">Позвонить</string>
+    <string name="p30_medical_card_text16">Петров Иван</string>
+    <string name="p30_medical_card_text17">Друг · +7 999 444-55-66</string>
+
+    <!-- p31_audio_player.xml -->
+    <string name="p31_audio_player_cd1">Обложка альбома</string>
+    <string name="p31_audio_player_text2">Неоновые огни — Ночной город (Extended Version, Live at Moscow 2026)</string>
+    <string name="p31_audio_player_text3">Неоновые огни · Альбом «Город»</string>
+    <string name="p31_audio_player_text4">1:23</string>
+    <string name="p31_audio_player_text5">3:42</string>
+    <string name="p31_audio_player_cd6">Перемешать</string>
+    <string name="p31_audio_player_cd7">Предыдущий</string>
+    <string name="p31_audio_player_cd8">Пауза</string>
+    <string name="p31_audio_player_cd9">Следующий</string>
+    <string name="p31_audio_player_cd10">Повтор</string>
+
+    <!-- p32_chat.xml -->
+    <string name="p32_chat_text1">Сегодня</string>
+    <string name="p32_chat_text2">Привет! Ты сделал пятую практическую?</string>
+    <string name="p32_chat_text3">18:02</string>
+    <string name="p32_chat_cd4">Аватар</string>
+    <string name="p32_chat_text5">Там 50 экранов, я еще на карточках сижу 😅</string>
+    <string name="p32_chat_text6">Привет! Да, почти всё. Самое сложное — оверлеи и ConstraintLayout</string>
+    <string name="p32_chat_text7">18:05 ✓✓</string>
+    <string name="p32_chat_text8">Главное — не вкладывать LinearLayout с весами друг в друга</string>
+    <string name="p32_chat_text9">А как сделать надпись прямо на рамке карточки?</string>
+    <string name="p32_chat_text10">18:07</string>
+    <string name="p32_chat_text11">FrameLayout: рамку опускаешь на половину высоты надписи, а надпись кладешь сверху 👍</string>
+    <string name="p32_chat_text12">18:09 ✓✓</string>
+    <string name="p32_chat_hint13">Сообщение</string>
+    <string name="p32_chat_cd14">Отправить</string>
+
+    <!-- p33_reels.xml -->
+    <string name="p33_reels_cd1">Видео</string>
+    <string name="p33_reels_text2">Подписки   |   Рекомендации</string>
+    <string name="p33_reels_cd3">favorite</string>
+    <string name="p33_reels_text4">48,2K</string>
+    <string name="p33_reels_cd5">comment</string>
+    <string name="p33_reels_text6">1 024</string>
+    <string name="p33_reels_cd7">share</string>
+    <string name="p33_reels_text8">Поделиться</string>
+    <string name="p33_reels_cd9">volume</string>
+    <string name="p33_reels_text10">Звук</string>
+    <string name="p33_reels_cd11">Автор</string>
+    <string name="p33_reels_text12">Звездное небо над горами за 15 секунд ✨ #природа #таймлапс</string>
+
+    <!-- p34_voice_call.xml -->
+    <string name="p34_voice_call_cd1">Фон</string>
+    <string name="p34_voice_call_text2">Вызов...</string>
+    <string name="p34_voice_call_text3">Анна Куликова</string>
+    <string name="p34_voice_call_text4">+7 999 111-22-33</string>
+    <string name="p34_voice_call_cd5">Аватар</string>
+    <string name="p34_voice_call_cd6">Сбросить</string>
+    <string name="p34_voice_call_cd7">Ответить</string>
+
+    <!-- p35_comments.xml -->
+    <string name="p35_comments_cd1">Аватар</string>
+    <string name="p35_comments_text2">Дмитрий · 2 ч</string>
+    <string name="p35_comments_text3">Наконец-то нормальный гайд по ConstraintLayout, спасибо!</string>
+    <string name="p35_comments_text4">Ответить   ♥ 24</string>
+    <string name="p35_comments_text5">Анна · 1 ч</string>
+    <string name="p35_comments_text6">Согласна, особенно про Barrier — раньше вообще не понимала, зачем он.</string>
+    <string name="p35_comments_text7">Ответить   ♥ 8</string>
+    <string name="p35_comments_text8">Автор · 45 мин</string>
+    <string name="p35_comments_text9">Рад, что пригодилось! Следующий выпуск — про MotionLayout.</string>
+    <string name="p35_comments_text10">Ответить   ♥ 15</string>
+    <string name="p35_comments_text11">Ольга · 30 мин</string>
+    <string name="p35_comments_text12">А можно пример с Flow? Нужно сделать теги в несколько строк.</string>
+    <string name="p35_comments_text13">Ответить   ♥ 3</string>
+    <string name="p35_comments_text14">Дмитрий · 12 мин</string>
+    <string name="p35_comments_text15">Для тегов проще взять ChipGroup, он сам переносит строки.</string>
+    <string name="p35_comments_text16">Ответить   ♥ 5</string>
+
+    <!-- p36_video_player.xml -->
+    <string name="p36_video_player_cd1">Видео</string>
+    <string name="p36_video_player_text2">1080p ▾</string>
+    <string name="p36_video_player_cd3">Пауза</string>
+    <string name="p36_video_player_cd4">Полный экран</string>
+    <string name="p36_video_player_text5">04:12 / 12:47</string>
+    <string name="p36_video_player_text6">Закат в горах: 4K таймлапс</string>
+    <string name="p36_video_player_text7">128 тыс. просмотров · 3 дня назад</string>
+    <string name="p36_video_player_text8">Нажмите на видео, чтобы скрыть или показать элементы управления</string>
+
+    <!-- p37_voice_record.xml -->
+    <string name="p37_voice_record_cd1">Удалить</string>
+    <string name="p37_voice_record_text2">‹ Влево — отмена</string>
+    <string name="p37_voice_record_cd3">Запись</string>
+
+    <!-- p38_gallery.xml -->
+    <string name="p38_gallery_cd1">Фото 1</string>
+    <string name="p38_gallery_cd2">Фото 2</string>
+    <string name="p38_gallery_cd3">Фото 3</string>
+    <string name="p38_gallery_cd4">Фото 4</string>
+    <string name="p38_gallery_cd5">Фото 5</string>
+    <string name="p38_gallery_cd6">Фото 6</string>
+    <string name="p38_gallery_cd7">Фото 7</string>
+    <string name="p38_gallery_cd8">Фото 8</string>
+    <string name="p38_gallery_cd9">Фото 9</string>
+
+    <!-- p39_stories.xml -->
+    <string name="p39_stories_cd1">История</string>
+    <string name="p39_stories_cd2">Автор</string>
+    <string name="p39_stories_text3">Анна</string>
+    <string name="p39_stories_text4">3 ч</string>
+    <string name="p39_stories_cd5">Закрыть</string>
+    <string name="p39_stories_text6">Закат в горах 🌄</string>
+
+    <!-- p40_podcast_preview.xml -->
+    <string name="p40_podcast_preview_text1">Как я сверстал 50 экранов</string>
+    <string name="p40_podcast_preview_text2">Блог студента · 2 ч назад</string>
+    <string name="p40_podcast_preview_cd3">Картинка поста</string>
+    <string name="p40_podcast_preview_cd4">Обложка подкаста</string>
+    <string name="p40_podcast_preview_text5">ПОДКАСТ · 42 мин</string>
+    <string name="p40_podcast_preview_text6">Мобильная разработка без боли: выпуск 12</string>
+    <string name="p40_podcast_preview_cd7">Слушать</string>
+    <string name="p40_podcast_preview_text8">Новый дизайн приложения банка</string>
+    <string name="p40_podcast_preview_text9">Дизайн-новости · вчера</string>
+
+    <!-- p41_taxi_map.xml -->
+    <string name="p41_taxi_map_cd1">Карта</string>
+    <string name="p41_taxi_map_cd2">Назад</string>
+    <string name="p41_taxi_map_text3">Куда едем? · Аэропорт Шереметьево</string>
+    <string name="p41_taxi_map_cd4">Эконом</string>
+    <string name="p41_taxi_map_text5">890 ₽</string>
+    <string name="p41_taxi_map_text6">4 мин</string>
+    <string name="p41_taxi_map_cd7">Комфорт</string>
+    <string name="p41_taxi_map_text8">1 240 ₽</string>
+    <string name="p41_taxi_map_text9">6 мин</string>
+    <string name="p41_taxi_map_cd10">Бизнес</string>
+    <string name="p41_taxi_map_text11">2 150 ₽</string>
+    <string name="p41_taxi_map_text12">9 мин</string>
+    <string name="p41_taxi_map_text13">Заказать «Комфорт»</string>
+
+    <!-- p42_cart.xml -->
+    <string name="p42_cart_cd1">Товар</string>
+    <string name="p42_cart_text2">Смартфон Nova 12, 256 ГБ</string>
+    <string name="p42_cart_text3">34 990 ₽</string>
+    <string name="p42_cart_text4">−  1  +</string>
+    <string name="p42_cart_text5">Беспроводные наушники Pulse</string>
+    <string name="p42_cart_text6">4 290 ₽</string>
+    <string name="p42_cart_text7">Чехол прозрачный</string>
+    <string name="p42_cart_text8">590 ₽</string>
+    <string name="p42_cart_text9">Защитное стекло 2 шт.</string>
+    <string name="p42_cart_text10">790 ₽</string>
+    <string name="p42_cart_text11">Зарядка 65 Вт</string>
+    <string name="p42_cart_text12">2 490 ₽</string>
+    <string name="p42_cart_text13">Кабель USB-C 2 м</string>
+    <string name="p42_cart_text14">690 ₽</string>
+
+    <!-- p43_onboarding.xml -->
+    <string name="p43_onboarding_cd1">Иллюстрация</string>
+    <string name="p43_onboarding_text2">Пропустить</string>
+    <string name="p43_onboarding_text3">Все покупки в одном приложении</string>
+    <string name="p43_onboarding_text4">Заказывайте технику, еду и такси, отслеживайте доставку и копите баллы за каждую покупку</string>
+    <string name="p43_onboarding_text5">Начать</string>
+
+    <!-- p44_qr_scanner.xml -->
+    <string name="p44_qr_scanner_cd1">Камера</string>
+    <string name="p44_qr_scanner_cd2">Закрыть</string>
+    <string name="p44_qr_scanner_text3">Наведите камеру на QR-код</string>
+    <string name="p44_qr_scanner_text4">Ввести код вручную</string>
+
+    <!-- p45_empty_state.xml -->
+    <string name="p45_empty_state_cd1">Пустой ящик</string>
+    <string name="p45_empty_state_text2">Здесь пока ничего нет</string>
+    <string name="p45_empty_state_text3">Мы не смогли загрузить список. Проверьте подключение и попробуйте еще раз</string>
+    <string name="p45_empty_state_text4">Обновить</string>
+
+    <!-- p46_quiz_results.xml -->
+    <string name="p46_quiz_results_cd1">Кубок</string>
+    <string name="p46_quiz_results_text2">1</string>
+    <string name="p46_quiz_results_text3">2</string>
+    <string name="p46_quiz_results_text4">3</string>
+    <string name="p46_quiz_results_text5">9 из 10</string>
+    <string name="p46_quiz_results_text6">Вы ответили лучше 87% игроков</string>
+    <string name="p46_quiz_results_text7">Поделиться</string>
+    <string name="p46_quiz_results_text8">Играть снова</string>
+
+    <!-- p47_confirm_operation.xml -->
+    <string name="p47_confirm_operation_text1">Перевод Анне К. · Т-Банк</string>
+    <string name="p47_confirm_operation_text2">−15 000 ₽</string>
+    <string name="p47_confirm_operation_text3">Комиссия 0 ₽ · со счета •• 9010</string>
+    <string name="p47_confirm_operation_hint4">Код из SMS</string>
+    <string name="p47_confirm_operation_text5">Код действует 01:00</string>
+    <string name="p47_confirm_operation_text6">Отправить SMS повторно</string>
+    <string name="p47_confirm_operation_text7">Подтвердить перевод</string>
+
+    <!-- p48_compare.xml -->
+    <string name="p48_compare_cd1">Товар А</string>
+    <string name="p48_compare_cd2">Товар Б</string>
+    <string name="p48_compare_text3">Экран</string>
+    <string name="p48_compare_text4">6,7″ OLED</string>
+    <string name="p48_compare_text5">6,1″ LCD</string>
+    <string name="p48_compare_text6">Память</string>
+    <string name="p48_compare_text7">256 ГБ</string>
+    <string name="p48_compare_text8">128 ГБ</string>
+    <string name="p48_compare_text9">Батарея</string>
+    <string name="p48_compare_text10">4 500 мА·ч</string>
+    <string name="p48_compare_text11">5 000 мА·ч</string>
+    <string name="p48_compare_text12">Камера</string>
+    <string name="p48_compare_text13">50 Мп</string>
+    <string name="p48_compare_text14">48 Мп</string>
+    <string name="p48_compare_text15">Вес</string>
+    <string name="p48_compare_text16">205 г</string>
+    <string name="p48_compare_text17">178 г</string>
+    <string name="p48_compare_text18">Цена</string>
+    <string name="p48_compare_text19">34 990 ₽</string>
+    <string name="p48_compare_text20">27 490 ₽</string>
+
+    <!-- p49_insurance.xml -->
+    <string name="p49_insurance_text1">Шаг 1 из 4 · Личные данные</string>
+    <string name="p49_insurance_hint2">Фамилия</string>
+    <string name="p49_insurance_hint3">Имя</string>
+    <string name="p49_insurance_hint4">Отчество</string>
+    <string name="p49_insurance_hint5">Дата рождения</string>
+    <string name="p49_insurance_hint6">Серия и номер паспорта</string>
+    <string name="p49_insurance_hint7">Кем выдан</string>
+    <string name="p49_insurance_hint8">Адрес регистрации</string>
+    <string name="p49_insurance_hint9">Телефон</string>
+    <string name="p49_insurance_text10">Назад</string>
+    <string name="p49_insurance_text11">Далее</string>
+
+    <!-- p50_product_page.xml -->
+    <string name="p50_product_page_text1">1 / 3</string>
+    <string name="p50_product_page_text2">Смартфон Nova 12 Pro</string>
+    <string name="p50_product_page_text3">4,8 · 2 413 отзывов</string>
+    <string name="p50_product_page_text4">«Батарея держит два дня, камера ночью снимает отлично. Брал на смену старому — не пожалел.» — Мария, 5★</string>
+    <string name="p50_product_page_text5">Цвет</string>
+    <string name="p50_product_page_text6">Полночный синий</string>
+    <string name="p50_product_page_text7">Графит</string>
+    <string name="p50_product_page_text8">Мятный</string>
+    <string name="p50_product_page_text9">Память</string>
+    <string name="p50_product_page_text10">128 ГБ</string>
+    <string name="p50_product_page_text11">256 ГБ</string>
+    <string name="p50_product_page_text12">512 ГБ</string>
+    <string name="p50_product_page_text13">Описание</string>
+    <string name="p50_product_page_cd14">Развернуть</string>
+    <string name="p50_product_page_text15">Характеристики</string>
+    <string name="p50_product_page_cd16">Назад</string>
+    <string name="p50_product_page_cd17">Поделиться</string>
+    <string name="p50_product_page_cd18">Корзина</string>
+    <string name="p50_product_page_text19">44 990 ₽</string>
+    <string name="p50_product_page_text20">59 990 ₽</string>
+    <string name="p50_product_page_text21">Добавить в корзину</string>
+
+    <!-- toolbar_common.xml -->
+    <string name="toolbar_common_cd1">Назад</string>
+
+    <!-- topic1_linear.xml -->
+    <string name="topic1_linear_text1">1. Ряд кнопок пин-кода (weight = 1)</string>
+    <string name="topic1_linear_text2">1</string>
+    <string name="topic1_linear_text3">2</string>
+    <string name="topic1_linear_text4">3</string>
+    <string name="topic1_linear_text5">2. Сплит-экран 50/50</string>
+    <string name="topic1_linear_text6">Верхняя половина</string>
+    <string name="topic1_linear_text7">Нижняя половина</string>
+    <string name="topic1_linear_text8">3. Поле поиска с кнопкой</string>
+    <string name="topic1_linear_hint9">Поиск по каталогу</string>
+    <string name="topic1_linear_cd10">Найти</string>
+    <string name="topic1_linear_text11">4. Центрирование заголовка</string>
+    <string name="topic1_linear_text12">Заголовок по центру</string>
+    <string name="topic1_linear_text13">подзаголовок справа</string>
+    <string name="topic1_linear_text14">5. Форма входа с разделителем</string>
+    <string name="topic1_linear_hint15">Логин</string>
+    <string name="topic1_linear_hint16">Пароль</string>
+
+    <!-- topic2_frame.xml -->
+    <string name="topic2_frame_text1">1. Аватар со статусом «Онлайн»</string>
+    <string name="topic2_frame_cd2">Аватар</string>
+    <string name="topic2_frame_text3">2. Кнопка с оверлеем блокировки (нажмите)</string>
+    <string name="topic2_frame_text4">Подтвердить</string>
+    <string name="topic2_frame_text5">3. Плавающая кнопка действия (FAB)</string>
+    <string name="topic2_frame_text6">Список задач на неделю. Сдать практическую по вёрстке, повторить ConstraintLayout, разобраться с ViewStub и merge. Купить молоко. Записаться в спортзал. Позвонить бабушке. Подготовить доклад по Overdraw для семинара в пятницу.</string>
+    <string name="topic2_frame_cd7">Добавить</string>
+    <string name="topic2_frame_text8">4. Контейнер под фрагмент</string>
+    <string name="topic2_frame_text9">Шапка экрана</string>
+    <string name="topic2_frame_text10">5. Видео-превью с иконкой Play</string>
+    <string name="topic2_frame_cd11">Кадр видео</string>
+    <string name="topic2_frame_cd12">Смотреть</string>
+    <string name="topic2_frame_text13">12:47</string>
+
+    <!-- topic3_relative.xml -->
+    <string name="topic3_relative_text1">1. Чат-сообщение с временем</string>
+    <string name="topic3_relative_text2">Привет! Ты уже сдал практическую по разметкам?</string>
+    <string name="topic3_relative_text3">14:32</string>
+    <string name="topic3_relative_text4">2. Шапка экрана (TopAppBar)</string>
+    <string name="topic3_relative_cd5">Назад</string>
+    <string name="topic3_relative_text6">Профиль</string>
+    <string name="topic3_relative_cd7">Настройки</string>
+    <string name="topic3_relative_text8">3. Карточка товара в каталоге</string>
+    <string name="topic3_relative_cd9">Фото товара</string>
+    <string name="topic3_relative_text10">Смартфон Nova 12, 256 ГБ</string>
+    <string name="topic3_relative_text11">34 990 ₽</string>
+    <string name="topic3_relative_text12">4. Элемент списка музыки</string>
+    <string name="topic3_relative_cd13">Обложка</string>
+    <string name="topic3_relative_cd14">В избранное</string>
+    <string name="topic3_relative_text15">Ночной город</string>
+    <string name="topic3_relative_text16">Неоновые огни</string>
+    <string name="topic3_relative_text17">5. Выравнивание по базовой линии</string>
+    <string name="topic3_relative_text18">490</string>
+    <string name="topic3_relative_text19">руб./мес.</string>
+
+    <!-- topic4_constraint.xml -->
+    <string name="topic4_constraint_text1">1. Баннер 16:9 (DimensionRatio)</string>
+    <string name="topic4_constraint_cd2">Баннер</string>
+    <string name="topic4_constraint_text3">2. Packed Chain, vertical_bias = 0.2</string>
+    <string name="topic4_constraint_text4">Заголовок</string>
+    <string name="topic4_constraint_text5">Подзаголовок прилип к заголовку</string>
+    <string name="topic4_constraint_text6">3. Ограничитель (Barrier)</string>
+    <string name="topic4_constraint_text7">Иванов Иван</string>
+    <string name="topic4_constraint_text8">Ведущий Android-разработчик</string>
+    <string name="topic4_constraint_text9">Написать</string>
+    <string name="topic4_constraint_text10">4. Процентное позиционирование (2 Guideline)</string>
+    <string name="topic4_constraint_text11">Войти</string>
+    <string name="topic4_constraint_text12">5. Групповое управление видимостью</string>
+    <string name="topic4_constraint_cd13">Иконка</string>
+    <string name="topic4_constraint_text14">Wi-Fi: Campus_5G</string>
+    <string name="topic4_constraint_text15">Подключено, 300 Мбит/с</string>
+    <string name="topic4_constraint_text16">Скрыть группу</string>
+
+    <!-- topic5_license.xml -->
+    <string name="topic5_license_text1">Принять условия</string>
+
+    <!-- topic5_login.xml -->
+    <string name="topic5_login_cd1">Логотип</string>
+    <string name="topic5_login_text2">Вход в аккаунт</string>
+    <string name="topic5_login_hint3">Электронная почта</string>
+    <string name="topic5_login_hint4">Пароль</string>
+    <string name="topic5_login_text5">Войти</string>
+    <string name="topic5_login_text6">Забыли пароль?</string>
+
+    <!-- topic5_scroll.xml -->
+    <string name="topic5_scroll_text1">1. Лента историй (HorizontalScrollView)</string>
+    <string name="topic5_scroll_cd2">Вы</string>
+    <string name="topic5_scroll_cd3">Аня</string>
+    <string name="topic5_scroll_cd4">Миша</string>
+    <string name="topic5_scroll_cd5">Катя</string>
+    <string name="topic5_scroll_cd6">Дима</string>
+    <string name="topic5_scroll_cd7">Оля</string>
+    <string name="topic5_scroll_cd8">Саша</string>
+    <string name="topic5_scroll_cd9">Лиза</string>
+    <string name="topic5_scroll_text10">4. Скрытие полосы прокрутки</string>
+    <string name="topic5_scroll_text11">У этого экрана и у ленты историй стоит android:scrollbars=\"none\" — полоса прокрутки не появляется даже во время скролла.</string>
+    <string name="topic5_scroll_text12">5. Почему нельзя RecyclerView внутри ScrollView</string>
+
+    <!-- topic6_combine.xml -->
+    <string name="topic6_combine_text1">1. Единая шапка через include</string>
+    <string name="topic6_combine_text2">Шапка сверху — файл toolbar_common.xml. Он подключен через include во все обычные экраны приложения (темы 1–6, лицензия, вход и практические задания).</string>
+    <string name="topic6_combine_text3">2. Составная карточка с корнем merge</string>
+    <string name="topic6_combine_text4">3. Ленивый экран ошибки (ViewStub)</string>
+    <string name="topic6_combine_text5">Проверить подключение</string>
+    <string name="topic6_combine_text6">4. Переопределение параметров у include</string>
+    <string name="topic6_combine_text7">5. Составной футер корзины</string>
+    <string name="topic6_combine_text8">Футер ниже — layout_cart_footer.xml. Он же подключен в «Корзину» (практика 42) и «Историю заказов» (практика 28).</string>
+
+    <!-- view_icon_card.xml -->
+    <string name="view_icon_card_cd1">Иконка</string>
+    <string name="view_icon_card_text2">Совет дня: используйте merge, чтобы не плодить контейнеры</string>
+
+    <!-- view_stat_tile.xml -->
+    <string name="view_stat_tile_text1">Шагов сегодня</string>
+    <string name="view_stat_tile_text2">8 431</string>
+</resources>

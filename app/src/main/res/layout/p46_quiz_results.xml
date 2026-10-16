@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Практика 46. Результаты квиза: пьедестал с кубком, конфетти поверх, баллы и две кнопки -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/ivTrophy"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:contentDescription="@string/p46_quiz_results_cd1"
+                android:src="@drawable/ic_trophy"
+                app:layout_constraintBottom_toTopOf="@id/podiumCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:tint="#FFC107" />
+
+            <!-- пьедестал: центральная ступень выше боковых, все прижаты к одной линии снизу -->
+            <TextView
+                android:id="@+id/podiumCenter"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:text="@string/p46_quiz_results_text2"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvQuizScore"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivTrophy" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="76dp"
+                android:background="@color/primary_light"
+                android:gravity="center"
+                android:text="@string/p46_quiz_results_text3"
+                android:textColor="@color/primary"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/podiumCenter"
+                app:layout_constraintEnd_toStartOf="@id/podiumCenter" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="56dp"
+                android:background="@color/primary_light"
+                android:gravity="center"
+                android:text="@string/p46_quiz_results_text4"
+                android:textColor="@color/primary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/podiumCenter"
+                app:layout_constraintStart_toEndOf="@id/podiumCenter" />
+
+            <TextView
+                android:id="@+id/tvQuizScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/p46_quiz_results_text5"
+                android:textColor="@color/text_primary"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvQuizCaption"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/podiumCenter" />
+
+            <TextView
+                android:id="@+id/tvQuizCaption"
+                style="@style/Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p46_quiz_results_text6"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@id/btnQuizShare"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvQuizScore" />
+
+            <!-- две кнопки в ряд (горизонтальная цепочка) -->
+            <Button
+                android:id="@+id/btnQuizShare"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="6dp"
+                android:text="@string/p46_quiz_results_text7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnQuizAgain"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvQuizCaption" />
+
+            <Button
+                android:id="@+id/btnQuizAgain"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="6dp"
+                android:text="@string/p46_quiz_results_text8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnQuizShare"
+                app:layout_constraintTop_toTopOf="@id/btnQuizShare" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- конфетти - последний слой, поверх всего экрана; касания проходят насквозь -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:src="@drawable/confetti" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Практика 41. Такси: карта на весь экран (FrameLayout), снизу карточка выбора тарифа -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 1-й слой: подложка карты -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/p41_taxi_map_cd1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_map" />
+
+    <!-- кнопка назад поверх карты -->
+    <ImageButton
+        android:id="@+id/btnToolbarBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_circle_white"
+        android:contentDescription="@string/p41_taxi_map_cd2"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:src="@drawable/ic_arrow_back"
+        app:tint="@color/text_primary" />
+
+    <!-- последний слой: карточка тарифов, прижата к низу -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_sheet"
+        android:elevation="16dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_chip"
+            android:backgroundTint="@color/divider" />
+
+        <TextView
+            style="@style/Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_rounded_light"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="@string/p41_taxi_map_text3"
+            app:drawableStartCompat="@drawable/ic_location"
+            app:drawableTint="@color/red" />
+
+        <LinearLayout
+            android:baselineAligned="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_light"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/p41_taxi_map_cd4"
+                    android:src="@drawable/ic_car"
+                    app:tint="@color/text_secondary" />
+
+                <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p41_taxi_map_cd4" android:textStyle="bold" />
+                <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p41_taxi_map_text5" />
+                <TextView style="@style/Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p41_taxi_map_text6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tariff_selected"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/p41_taxi_map_cd7"
+                    android:src="@drawable/ic_car"
+                    app:tint="@color/primary" />
+
+                <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p41_taxi_map_cd7" android:textStyle="bold" />
+                <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p41_taxi_map_text8" />
+                <TextView style="@style/Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p41_taxi_map_text9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_light"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/p41_taxi_map_cd10"
+                    android:src="@drawable/ic_car"
+                    app:tint="@color/text_secondary" />
+
+                <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p41_taxi_map_cd10" android:textStyle="bold" />
+                <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p41_taxi_map_text11" />
+                <TextView style="@style/Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p41_taxi_map_text12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/p41_taxi_map_text13" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Практика 11. Перевод по номеру телефона -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/p11_transfer_hint1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView style="@style/SectionTitle" android:text="@string/p11_transfer_text2" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_tariff_selected"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#21A038"
+                        android:contentDescription="@string/p11_transfer_cd3"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_bank"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        style="@style/Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/p11_transfer_cd3"
+                        android:textColor="@color/text_primary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_rounded_light"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#FFC107"
+                        android:contentDescription="@string/p11_transfer_cd4"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_bank"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        style="@style/Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/p11_transfer_cd4"
+                        android:textColor="@color/text_primary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_rounded_light"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#0A2896"
+                        android:contentDescription="@string/p11_transfer_cd5"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_bank"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        style="@style/Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/p11_transfer_cd5"
+                        android:textColor="@color/text_primary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_rounded_light"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#EF3124"
+                        android:contentDescription="@string/p11_transfer_cd6"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_bank"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        style="@style/Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/p11_transfer_cd6"
+                        android:textColor="@color/text_primary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_rounded_light"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#1A4C9B"
+                        android:contentDescription="@string/p11_transfer_cd7"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_bank"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        style="@style/Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/p11_transfer_cd7"
+                        android:textColor="@color/text_primary" />
+                </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/p11_transfer_hint8"
+                app:suffixText="@string/p11_transfer_suffix9">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTransferAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnQuick500"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="@string/p11_transfer_text10" />
+            <Button
+                android:id="@+id/btnQuick1000"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="@string/p11_transfer_text11" />
+            <Button
+                android:id="@+id/btnQuick5000"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:text="@string/p11_transfer_text12" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/p11_transfer_text13" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

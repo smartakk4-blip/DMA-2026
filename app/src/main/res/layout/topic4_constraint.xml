@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Тема 4. ConstraintLayout: связи, цепочки, барьеры, направляющие, группы -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_padding">
+
+            <!-- 1. Баннер на всю ширину, высота считается по пропорции 16:9 -->
+            <TextView style="@style/SectionTitle" android:text="@string/topic4_constraint_text1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:contentDescription="@string/topic4_constraint_cd2"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_hotel1"
+                    app:layout_constraintDimensionRatio="16:9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 2. Вертикальная packed-цепочка, смещенная к верхней трети (bias 0.2) -->
+            <TextView style="@style/SectionTitle" android:text="@string/topic4_constraint_text3" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/bg_rounded_light">
+
+                <TextView
+                    android:id="@+id/tvChainTitle"
+                    style="@style/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic4_constraint_text4"
+                    app:layout_constraintBottom_toTopOf="@id/tvChainSubtitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.2"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/tvChainSubtitle"
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic4_constraint_text5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvChainTitle" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 3. Barrier: кнопка всегда правее самой длинной из двух надписей -->
+            <TextView style="@style/SectionTitle" android:text="@string/topic4_constraint_text6" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/tvBarrierName"
+                    style="@style/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic4_constraint_text7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBarrierRole"
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic4_constraint_text8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvBarrierName" />
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/barrierText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="end"
+                    app:constraint_referenced_ids="tvBarrierName,tvBarrierRole" />
+
+                <Button
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/topic4_constraint_text9"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/barrierText"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 4. Кнопка от 15% до 85% ширины по двум Guideline -->
+            <TextView style="@style/SectionTitle" android:text="@string/topic4_constraint_text10" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_light"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideStart15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.15" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideEnd85"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.85" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic4_constraint_text11"
+                    app:layout_constraintEnd_toStartOf="@id/guideEnd85"
+                    app:layout_constraintStart_toStartOf="@id/guideStart15"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 5. Group: три элемента скрываются одной строкой в Java -->
+            <TextView style="@style/SectionTitle" android:text="@string/topic4_constraint_text12" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/ivGroupIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/topic4_constraint_cd13"
+                    android:src="@drawable/ic_wifi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:id="@+id/tvGroupTitle"
+                    style="@style/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/topic4_constraint_text14"
+                    app:layout_constraintStart_toEndOf="@id/ivGroupIcon"
+                    app:layout_constraintTop_toTopOf="@id/ivGroupIcon" />
+
+                <TextView
+                    android:id="@+id/tvGroupSubtitle"
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic4_constraint_text15"
+                    app:layout_constraintStart_toStartOf="@id/tvGroupTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvGroupTitle" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/groupWifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="ivGroupIcon,tvGroupTitle,tvGroupSubtitle" />
+
+                <!-- кнопка не входит в группу и остается видна -->
+                <Button
+                    android:id="@+id/btnToggleGroup"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic4_constraint_text16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

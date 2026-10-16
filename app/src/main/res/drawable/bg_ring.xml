@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Подложка кольца прогресса -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadiusRatio="2.6" android:shape="ring" android:thicknessRatio="14"
+    android:useLevel="false">
+    <solid android:color="@color/primary_light" />
+</shape>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Практика 25. Статистика батареи -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p25_battery_text1"
+                    android:textColor="@color/text_primary"
+                    android:textSize="44sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/p25_battery_text2" />
+            </LinearLayout>
+
+            <!-- горизонтальный "градусник": корпус батареи + заряд + контакт справа -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_field"
+                    android:max="100"
+                    android:padding="4dp"
+                    android:progress="64"
+                    android:progressTint="@color/green" />
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="18dp"
+                    android:background="#B0BEC5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="15" android:text="@string/p25_battery_text3" android:textColor="@color/red" android:textSize="11sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="35" android:gravity="center" android:text="@string/p25_battery_text4" android:textColor="@color/accent" android:textSize="11sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="50" android:gravity="end" android:text="@string/p25_battery_text5" android:textColor="@color/green" android:textSize="11sp" />
+            </LinearLayout>
+
+            <TextView style="@style/SectionTitle" android:text="@string/p25_battery_text6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_circle"
+                    android:backgroundTint="@color/red"
+                    android:contentDescription="@string/p25_battery_cd7"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_image"
+                    app:tint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p25_battery_cd7" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="4dp"
+                        android:max="40"
+                        android:progress="34"
+                        android:progressTint="@color/red" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Body"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/p25_battery_text8"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_circle"
+                    android:backgroundTint="@color/primary"
+                    android:contentDescription="@string/p25_battery_cd9"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_image"
+                    app:tint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p25_battery_cd9" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="4dp"
+                        android:max="40"
+                        android:progress="18"
+                        android:progressTint="@color/primary" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Body"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/p25_battery_text10"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_circle"
+                    android:backgroundTint="@color/green"
+                    android:contentDescription="@string/p25_battery_cd11"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_image"
+                    app:tint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p25_battery_cd11" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="4dp"
+                        android:max="40"
+                        android:progress="12"
+                        android:progressTint="@color/green" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Body"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/p25_battery_text12"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_circle"
+                    android:backgroundTint="@color/accent"
+                    android:contentDescription="@string/p25_battery_cd13"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_image"
+                    app:tint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p25_battery_cd13" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="4dp"
+                        android:max="40"
+                        android:progress="9"
+                        android:progressTint="@color/accent" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Body"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/p25_battery_text14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_circle"
+                    android:backgroundTint="@color/purple"
+                    android:contentDescription="@string/p25_battery_cd15"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_image"
+                    app:tint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p25_battery_cd15" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="4dp"
+                        android:max="40"
+                        android:progress="6"
+                        android:progressTint="@color/purple" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Body"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/p25_battery_text16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

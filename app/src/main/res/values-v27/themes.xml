@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- windowLightNavigationBar есть только с Android 8.1 (API 27), а minSdk = 26 -->
+<resources>
+    <style name="Theme.Layouts" parent="Base.Theme.Layouts">
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <style name="Theme.Layouts.Dark" parent="Base.Theme.Layouts.Dark">
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

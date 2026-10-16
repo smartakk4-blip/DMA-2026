@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Практика 19. Ввод кода из SMS: 6 полей строго по центру, фокус переходит сам -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/p19_sms_code_text1"
+            android:textColor="@color/text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/p19_sms_code_text2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etCode1"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_field"
+            android:gravity="center"
+            android:hint="@string/p19_sms_code_hint3"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etCode2"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_field"
+            android:gravity="center"
+            android:hint="@string/p19_sms_code_hint3"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etCode3"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_field"
+            android:gravity="center"
+            android:hint="@string/p19_sms_code_hint3"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etCode4"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_field"
+            android:gravity="center"
+            android:hint="@string/p19_sms_code_hint3"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etCode5"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_field"
+            android:gravity="center"
+            android:hint="@string/p19_sms_code_hint3"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etCode6"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/bg_field"
+            android:gravity="center"
+            android:hint="@string/p19_sms_code_hint3"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/p19_sms_code_text4"
+            android:textColor="@color/primary" />
+    </LinearLayout>
+
+</LinearLayout>

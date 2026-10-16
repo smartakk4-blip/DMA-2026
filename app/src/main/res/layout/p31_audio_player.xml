@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Практика 31. Экран аудиоплеера -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- обложка 1:1 на всю ширину -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:contentDescription="@string/p31_audio_player_cd1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_album1"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Large" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- бегущая строка: marquee работает только у выбранного (selected) TextView, это делается в коде -->
+            <TextView
+                android:id="@+id/tvMarquee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="@string/p31_audio_player_text2"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p31_audio_player_text3"
+                android:textSize="15sp" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:max="222"
+                android:progress="83" />
+
+            <!-- метки времени по бокам -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView style="@style/Caption" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/p31_audio_player_text4" />
+                <TextView style="@style/Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p31_audio_player_text5" />
+            </LinearLayout>
+
+            <!-- 5 кнопок управления -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnPlayerShuffle"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/p31_audio_player_cd6"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_shuffle"
+                app:tint="@color/text_primary" />
+
+            <ImageButton
+                android:id="@+id/btnPlayerSkipPrevious"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/p31_audio_player_cd7"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_skip_previous"
+                app:tint="@color/text_primary" />
+
+            <ImageButton
+                android:id="@+id/btnPlayerPause"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_circle"
+                android:contentDescription="@string/p31_audio_player_cd8"
+                android:padding="18dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_pause"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/btnPlayerSkipNext"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/p31_audio_player_cd9"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_skip_next"
+                app:tint="@color/text_primary" />
+
+            <ImageButton
+                android:id="@+id/btnPlayerRepeat"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/p31_audio_player_cd10"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_repeat"
+                app:tint="@color/text_primary" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

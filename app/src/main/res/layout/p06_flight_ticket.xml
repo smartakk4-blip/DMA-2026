@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Практика 6. Карточка авиабилета -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:ignore="Overdraw"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_card"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvFlightRoute"
+                style="@style/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p06_flight_ticket_text1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDepTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/p06_flight_ticket_text2"
+                android:textColor="@color/text_primary"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvFlightRoute" />
+
+            <TextView
+                android:id="@+id/tvDepCode"
+                style="@style/Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p06_flight_ticket_text3"
+                app:layout_constraintStart_toStartOf="@id/tvDepTime"
+                app:layout_constraintTop_toBottomOf="@id/tvDepTime" />
+
+            <TextView
+                android:id="@+id/tvArrTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p06_flight_ticket_text4"
+                android:textColor="@color/text_primary"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvDepTime" />
+
+            <TextView
+                style="@style/Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p06_flight_ticket_text5"
+                app:layout_constraintEnd_toEndOf="@id/tvArrTime"
+                app:layout_constraintTop_toBottomOf="@id/tvArrTime" />
+
+            <!-- пунктир между временами, самолет над ним по центру -->
+            <View
+                android:id="@+id/flightDash"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_dashed_line"
+                android:layerType="software"
+                app:layout_constraintBottom_toBottomOf="@id/tvDepTime"
+                app:layout_constraintEnd_toStartOf="@id/tvArrTime"
+                app:layout_constraintStart_toEndOf="@id/tvDepTime"
+                app:layout_constraintTop_toTopOf="@id/tvDepTime" />
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@color/surface"
+                android:contentDescription="@string/p06_flight_ticket_cd6"
+                android:rotation="90"
+                android:src="@drawable/ic_flight"
+                app:layout_constraintBottom_toTopOf="@id/flightDash"
+                app:layout_constraintEnd_toEndOf="@id/flightDash"
+                app:layout_constraintStart_toStartOf="@id/flightDash"
+                app:tint="@color/primary" />
+
+            <TextView
+                style="@style/Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p06_flight_ticket_text7"
+                app:layout_constraintEnd_toEndOf="@id/flightDash"
+                app:layout_constraintStart_toStartOf="@id/flightDash"
+                app:layout_constraintTop_toBottomOf="@id/flightDash" />
+
+            <View
+                android:id="@+id/flightDivider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDepCode" />
+
+            <TextView
+                style="@style/Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/p06_flight_ticket_text8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/flightDivider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/p06_flight_ticket_text9"
+                android:textColor="@color/green"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/flightDivider" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</LinearLayout>

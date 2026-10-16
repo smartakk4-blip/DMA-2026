@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Тема 6, задание 1: единая шапка приложения.
+    Подключается через <include> во все обычные экраны. Заголовок ставит ScreenActivity.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="@color/surface"
+    android:elevation="2dp">
+
+    <ImageButton
+        android:id="@+id/btnToolbarBack"
+        style="@style/IconButton"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="4dp"
+        android:contentDescription="@string/toolbar_common_cd1"
+        android:src="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/tvToolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/btnToolbarBack"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_primary"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Тема 6, задание 2: составная карточка "иконка + текст" с корнем <merge>.
+    При подключении в горизонтальный LinearLayout эти элементы становятся его прямыми детьми,
+    лишнего контейнера в дереве View нет.
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bg_circle_light"
+        android:contentDescription="@string/view_icon_card_cd1"
+        android:padding="8dp"
+        android:src="@drawable/ic_bulb"
+        app:tint="@color/primary" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:text="@string/view_icon_card_text2"
+        android:textColor="@color/text_primary" />
+</merge>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Практика 29. Умный дом: сетка из равных квадратных плиток (ConstraintLayout, ratio 1:1) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:ignore="Overdraw"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideHalf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <LinearLayout
+                android:id="@+id/tileLiving"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="14dp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideHalf"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView style="@style/Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p29_smart_home_text1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p29_smart_home_text2"
+                    android:textColor="@color/text_primary"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <TextView style="@style/Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p29_smart_home_text3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/p29_smart_home_text4"
+                    android:textColor="@color/accent"
+                    android:textSize="13sp"
+                    app:drawableStartCompat="@drawable/ic_bulb"
+                    app:drawableTint="@color/accent" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tileBed"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="14dp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="@id/guideHalf"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView style="@style/Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p29_smart_home_text5" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p29_smart_home_text6"
+                    android:textColor="@color/text_primary"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <TextView style="@style/Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p29_smart_home_text7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/p29_smart_home_text8"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    app:drawableStartCompat="@drawable/ic_bulb"
+                    app:drawableTint="@color/text_secondary" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tileKitchen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="14dp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideHalf"
+                app:layout_constraintTop_toBottomOf="@id/tileLiving">
+
+                <TextView style="@style/Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p29_smart_home_text9" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p29_smart_home_text10"
+                    android:textColor="@color/text_primary"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <TextView style="@style/Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p29_smart_home_text11" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/p29_smart_home_text4"
+                    android:textColor="@color/accent"
+                    android:textSize="13sp"
+                    app:drawableStartCompat="@drawable/ic_bulb"
+                    app:drawableTint="@color/accent" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tileBath"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="14dp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="@id/guideHalf"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tileBed">
+
+                <TextView style="@style/Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p29_smart_home_text12" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p29_smart_home_text13"
+                    android:textColor="@color/text_primary"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <TextView style="@style/Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p29_smart_home_text14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/p29_smart_home_text8"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    app:drawableStartCompat="@drawable/ic_bulb"
+                    app:drawableTint="@color/text_secondary" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</LinearLayout>

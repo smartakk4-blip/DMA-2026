@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Практика 5. Характеристики автомобиля на плоском ConstraintLayout (без вложенных LinearLayout) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:ignore="Overdraw"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_card"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <!-- колонка значений начинается с 45% ширины -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/carGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.45" />
+
+            <TextView
+                android:id="@+id/carKey0"
+                style="@style/Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/p05_car_specs_text1"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@id/carGuide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/carValue0"
+                style="@style/Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/p05_car_specs_text2"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/carKey0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/carGuide" />
+
+            <View
+                android:id="@+id/carDiv0"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carKey0" />
+            <TextView
+                android:id="@+id/carKey1"
+                style="@style/Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/p05_car_specs_text3"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@id/carGuide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carDiv0" />
+
+            <TextView
+                android:id="@+id/carValue1"
+                style="@style/Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/p05_car_specs_text4"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/carKey1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/carGuide" />
+
+            <View
+                android:id="@+id/carDiv1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carKey1" />
+            <TextView
+                android:id="@+id/carKey2"
+                style="@style/Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/p05_car_specs_text5"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@id/carGuide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carDiv1" />
+
+            <TextView
+                android:id="@+id/carValue2"
+                style="@style/Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/p05_car_specs_text6"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/carKey2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/carGuide" />
+
+            <View
+                android:id="@+id/carDiv2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carKey2" />
+            <TextView
+                android:id="@+id/carKey3"
+                style="@style/Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/p05_car_specs_text7"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@id/carGuide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carDiv2" />
+
+            <TextView
+                android:id="@+id/carValue3"
+                style="@style/Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/p05_car_specs_text8"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/carKey3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/carGuide" />
+
+            <View
+                android:id="@+id/carDiv3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carKey3" />
+            <TextView
+                android:id="@+id/carKey4"
+                style="@style/Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/p05_car_specs_text9"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@id/carGuide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carDiv3" />
+
+            <TextView
+                android:id="@+id/carValue4"
+                style="@style/Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/p05_car_specs_text10"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/carKey4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/carGuide" />
+
+            <View
+                android:id="@+id/carDiv4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carKey4" />
+            <TextView
+                android:id="@+id/carKey5"
+                style="@style/Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/p05_car_specs_text11"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@id/carGuide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carDiv4" />
+
+            <TextView
+                android:id="@+id/carValue5"
+                style="@style/Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/p05_car_specs_text12"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/carKey5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/carGuide" />
+
+            <View
+                android:id="@+id/carDiv5"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carKey5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</LinearLayout>

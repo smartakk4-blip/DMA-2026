@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Практика 27. Визитка водителя такси -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:ignore="Overdraw"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_card"
+            android:padding="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivDriver"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/p27_taxi_driver_cd1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_avatar3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+            <!-- желтый бейдж рейтинга наезжает на низ фото -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_badge_yellow"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/p27_taxi_driver_text2"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_star"
+                app:layout_constraintBottom_toBottomOf="@id/ivDriver"
+                app:layout_constraintEnd_toEndOf="@id/ivDriver"
+                app:layout_constraintStart_toStartOf="@id/ivDriver"
+                app:layout_constraintTop_toBottomOf="@id/ivDriver" />
+
+            <TextView
+                android:id="@+id/tvDriverName"
+                style="@style/Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/p27_taxi_driver_text3"
+                app:layout_constraintStart_toEndOf="@id/ivDriver"
+                app:layout_constraintTop_toTopOf="@id/ivDriver" />
+
+            <TextView
+                android:id="@+id/tvCarModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p27_taxi_driver_text4"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/tvDriverName"
+                app:layout_constraintTop_toBottomOf="@id/tvDriverName" />
+
+            <!-- номер авто крупно, в рамке как на номерном знаке -->
+            <TextView
+                android:id="@+id/tvCarNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_field"
+                android:fontFamily="monospace"
+                android:paddingStart="10dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="2dp"
+                android:text="@string/p27_taxi_driver_text5"
+                android:textColor="@color/text_primary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/tvDriverName"
+                app:layout_constraintTop_toBottomOf="@id/tvCarModel" />
+
+            <TextView
+                android:id="@+id/tvArrival"
+                style="@style/Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_rounded_light"
+                android:padding="12dp"
+                android:text="@string/p27_taxi_driver_text6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCarNumber" />
+
+            <Button
+                android:id="@+id/btnDriverCall"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="6dp"
+                android:text="@string/p27_taxi_driver_text7"
+                app:icon="@drawable/ic_call"
+                app:layout_constraintEnd_toStartOf="@id/btnEmergency"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvArrival" />
+
+            <!-- кнопка экстренной связи -->
+            <Button
+                android:id="@+id/btnEmergency"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="6dp"
+                android:backgroundTint="@color/red"
+                android:text="@string/p27_taxi_driver_text8"
+                app:icon="@drawable/ic_warning"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnDriverCall"
+                app:layout_constraintTop_toTopOf="@id/btnDriverCall" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</LinearLayout>

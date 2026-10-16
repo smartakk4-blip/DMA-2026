@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Практика 26. Сетка достижений 3x3 (заблокированные - полупрозрачные с замком) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/p26_achievements_text1" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:columnCount="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <FrameLayout
+                    android:layout_width="76dp"
+                    android:layout_height="76dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="1"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#FFC107"
+                        android:contentDescription="@string/p26_achievements_cd2"
+                        android:padding="20dp"
+                        android:src="@drawable/ic_star"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="@string/p26_achievements_cd2"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <FrameLayout
+                    android:layout_width="76dp"
+                    android:layout_height="76dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="1"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#FF7043"
+                        android:contentDescription="@string/p26_achievements_cd3"
+                        android:padding="20dp"
+                        android:src="@drawable/ic_trophy"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="@string/p26_achievements_cd3"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <FrameLayout
+                    android:layout_width="76dp"
+                    android:layout_height="76dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="1"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#7E57C2"
+                        android:contentDescription="@string/p26_achievements_cd4"
+                        android:padding="20dp"
+                        android:src="@drawable/ic_bulb"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="@string/p26_achievements_cd4"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <FrameLayout
+                    android:layout_width="76dp"
+                    android:layout_height="76dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.3"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#26A69A"
+                        android:contentDescription="@string/p26_achievements_cd5"
+                        android:padding="20dp"
+                        android:src="@drawable/ic_car"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/p26_achievements_cd6"
+                        android:src="@drawable/ic_lock"
+                        app:tint="@color/text_primary" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="@string/p26_achievements_cd5"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <FrameLayout
+                    android:layout_width="76dp"
+                    android:layout_height="76dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="1"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#EC407A"
+                        android:contentDescription="@string/p26_achievements_cd7"
+                        android:padding="20dp"
+                        android:src="@drawable/ic_music"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="@string/p26_achievements_cd7"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <FrameLayout
+                    android:layout_width="76dp"
+                    android:layout_height="76dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.3"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#42A5F5"
+                        android:contentDescription="@string/p26_achievements_cd8"
+                        android:padding="20dp"
+                        android:src="@drawable/ic_camera"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/p26_achievements_cd6"
+                        android:src="@drawable/ic_lock"
+                        app:tint="@color/text_primary" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="@string/p26_achievements_cd8"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <FrameLayout
+                    android:layout_width="76dp"
+                    android:layout_height="76dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="1"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#66BB6A"
+                        android:contentDescription="@string/p26_achievements_cd9"
+                        android:padding="20dp"
+                        android:src="@drawable/ic_comment"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="@string/p26_achievements_cd9"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <FrameLayout
+                    android:layout_width="76dp"
+                    android:layout_height="76dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.3"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#8D6E63"
+                        android:contentDescription="@string/p26_achievements_cd10"
+                        android:padding="20dp"
+                        android:src="@drawable/ic_flight"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/p26_achievements_cd6"
+                        android:src="@drawable/ic_lock"
+                        app:tint="@color/text_primary" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="@string/p26_achievements_cd10"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <FrameLayout
+                    android:layout_width="76dp"
+                    android:layout_height="76dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.3"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#FFD600"
+                        android:contentDescription="@string/p26_achievements_cd11"
+                        android:padding="20dp"
+                        android:src="@drawable/ic_trophy"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/p26_achievements_cd6"
+                        android:src="@drawable/ic_lock"
+                        app:tint="@color/text_primary" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="@string/p26_achievements_cd11"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+            </GridLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
